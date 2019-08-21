@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		C24D15EB230D852F00E70D1E /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24D15EA230D852F00E70D1E /* Auth.storyboard */; };
 		C24D15ED230D865F00E70D1E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24D15EC230D865F00E70D1E /* LoginController.swift */; };
+		C253D1F1230D97AD00EB2AE5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253D1F0230D97AD00EB2AE5 /* Constants.swift */; };
+		C253D1F4230D987700EB2AE5 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253D1F3230D987700EB2AE5 /* UIColorHex.swift */; };
+		C253D1F6230D9C3B00EB2AE5 /* JMAuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253D1F5230D9C3B00EB2AE5 /* JMAuthTextField.swift */; };
 		C2E7BBC4230D6DB400C8980A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E7BBC3230D6DB400C8980A /* AppDelegate.swift */; };
 		C2E7BBC6230D6DB400C8980A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E7BBC5230D6DB400C8980A /* ViewController.swift */; };
 		C2E7BBC9230D6DB400C8980A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E7BBC7230D6DB400C8980A /* Main.storyboard */; };
@@ -23,6 +26,9 @@
 		76F92EC054999730EC93A8B9 /* Pods_calorie_counter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calorie_counter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C24D15EA230D852F00E70D1E /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		C24D15EC230D865F00E70D1E /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		C253D1F0230D97AD00EB2AE5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C253D1F3230D987700EB2AE5 /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
+		C253D1F5230D9C3B00EB2AE5 /* JMAuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMAuthTextField.swift; sourceTree = "<group>"; };
 		C2E7BBC0230D6DB400C8980A /* calorie-counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "calorie-counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E7BBC3230D6DB400C8980A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E7BBC5230D6DB400C8980A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +59,48 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C253D1EA230D96B900EB2AE5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C2E7BBC7230D6DB400C8980A /* Main.storyboard */,
+				C24D15EA230D852F00E70D1E /* Auth.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		C253D1EB230D971C00EB2AE5 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				C253D1F5230D9C3B00EB2AE5 /* JMAuthTextField.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		C253D1EC230D972D00EB2AE5 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C253D1F0230D97AD00EB2AE5 /* Constants.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C253D1ED230D974800EB2AE5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C2E7BBC5230D6DB400C8980A /* ViewController.swift */,
+				C24D15EC230D865F00E70D1E /* LoginController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C253D1F2230D981C00EB2AE5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C253D1F3230D987700EB2AE5 /* UIColorHex.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		C2E7BBB7230D6DB400C8980A = {
 			isa = PBXGroup;
 			children = (
@@ -74,14 +122,15 @@
 		C2E7BBC2230D6DB400C8980A /* calorie-counter */ = {
 			isa = PBXGroup;
 			children = (
+				C253D1F2230D981C00EB2AE5 /* Helpers */,
+				C253D1ED230D974800EB2AE5 /* Controllers */,
+				C253D1EC230D972D00EB2AE5 /* Utilities */,
+				C253D1EB230D971C00EB2AE5 /* CustomViews */,
+				C253D1EA230D96B900EB2AE5 /* Storyboards */,
 				C2E7BBD5230D71FD00C8980A /* GoogleService-Info.plist */,
 				C2E7BBC3230D6DB400C8980A /* AppDelegate.swift */,
-				C2E7BBC5230D6DB400C8980A /* ViewController.swift */,
-				C2E7BBC7230D6DB400C8980A /* Main.storyboard */,
 				C2E7BBCA230D6DB500C8980A /* Assets.xcassets */,
 				C2E7BBCF230D6DB500C8980A /* Info.plist */,
-				C24D15EA230D852F00E70D1E /* Auth.storyboard */,
-				C24D15EC230D865F00E70D1E /* LoginController.swift */,
 			);
 			path = "calorie-counter";
 			sourceTree = "<group>";
@@ -274,7 +323,10 @@
 			files = (
 				C2E7BBC6230D6DB400C8980A /* ViewController.swift in Sources */,
 				C24D15ED230D865F00E70D1E /* LoginController.swift in Sources */,
+				C253D1F6230D9C3B00EB2AE5 /* JMAuthTextField.swift in Sources */,
+				C253D1F4230D987700EB2AE5 /* UIColorHex.swift in Sources */,
 				C2E7BBC4230D6DB400C8980A /* AppDelegate.swift in Sources */,
+				C253D1F1230D97AD00EB2AE5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
