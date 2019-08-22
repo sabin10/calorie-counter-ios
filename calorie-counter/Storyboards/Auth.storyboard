@@ -13,7 +13,7 @@
         <!--Login Controller-->
         <scene sceneID="Ccm-Aa-f8c">
             <objects>
-                <viewController id="0Uq-h4-nLA" customClass="LoginController" customModule="calorie_counter" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginController" id="0Uq-h4-nLA" customClass="LoginController" customModule="calorie_counter" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="00x-ey-q4p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -83,11 +83,36 @@
                     <connections>
                         <outlet property="emailField" destination="VDM-sI-Pxg" id="EnY-LO-5dc"/>
                         <outlet property="passwordField" destination="1lx-fe-9fN" id="2ZB-oE-VkO"/>
+                        <outlet property="toRegisterLabel" destination="dv5-W9-lCy" id="eN5-Nn-AbZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u7J-LL-T2f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-122.40000000000001" y="187.55622188905548"/>
+        </scene>
+        <!--Register Controller-->
+        <scene sceneID="RkJ-5V-nL7">
+            <objects>
+                <viewController storyboardIdentifier="RegisterController" id="7H8-md-5ub" customClass="RegisterController" customModule="calorie_counter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0qS-ca-57N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PuV-yp-5xN">
+                                <rect key="frame" x="166" y="396" width="64" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aSG-QI-k3w"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xSv-K4-8le" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="663" y="187"/>
         </scene>
     </scenes>
 </document>

@@ -9,19 +9,22 @@
 import UIKit
 import FirebaseAuth
 
-class LoginController: UIViewController {
+class LoginController: UIViewController, Storyboarded {
+    
+    weak var coordinator: AuthCoordinator?
     
     
     @IBOutlet weak var emailField: JMAuthTextField!
     @IBOutlet weak var passwordField: JMAuthTextField!
+    @IBOutlet weak var toRegisterLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        initToRegisterLabelInteraction()
     }
     
     
+    // Actions
     @IBAction func loginBtnPressed(_ sender: Any) {
         if let emailText = emailField.text,
             let passwordText = passwordField.text {
@@ -30,6 +33,12 @@ class LoginController: UIViewController {
         
     }
     
+    @objc func toRegisterLabelTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+//        print("sabi sabin")
+        coordinator?.toRegister()
+    }
+    
+    // Firebase Sign In
     private func signInFirebase(email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if let error = error {
@@ -59,6 +68,13 @@ class LoginController: UIViewController {
             )
         )
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    // Init
+    private func initToRegisterLabelInteraction() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(toRegisterLabelTapped(tapGestureRecognizer:)))
+        toRegisterLabel.isUserInteractionEnabled = true
+        toRegisterLabel.addGestureRecognizer(tapGesture)
     }
     
 

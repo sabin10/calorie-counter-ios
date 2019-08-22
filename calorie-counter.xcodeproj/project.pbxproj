@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		C22EC3B5230E75E300726551 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3B4230E75E300726551 /* StringExtensions.swift */; };
 		C22EC3B7230E7A3B00726551 /* JMBlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3B6230E7A3B00726551 /* JMBlackButton.swift */; };
+		C22EC3BA230EA6DE00726551 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3B9230EA6DE00726551 /* Coordinator.swift */; };
+		C22EC3BC230EA84500726551 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3BB230EA84500726551 /* Storyboarded.swift */; };
+		C22EC3BE230EAD5B00726551 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3BD230EAD5B00726551 /* AuthCoordinator.swift */; };
+		C22EC3C0230EB03300726551 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3BF230EB03300726551 /* RegisterController.swift */; };
 		C24D15EB230D852F00E70D1E /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24D15EA230D852F00E70D1E /* Auth.storyboard */; };
 		C24D15ED230D865F00E70D1E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24D15EC230D865F00E70D1E /* LoginController.swift */; };
 		C253D1F1230D97AD00EB2AE5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253D1F0230D97AD00EB2AE5 /* Constants.swift */; };
@@ -28,6 +32,10 @@
 		76F92EC054999730EC93A8B9 /* Pods_calorie_counter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calorie_counter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C22EC3B4230E75E300726551 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		C22EC3B6230E7A3B00726551 /* JMBlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMBlackButton.swift; sourceTree = "<group>"; };
+		C22EC3B9230EA6DE00726551 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C22EC3BB230EA84500726551 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
+		C22EC3BD230EAD5B00726551 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		C22EC3BF230EB03300726551 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 		C24D15EA230D852F00E70D1E /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		C24D15EC230D865F00E70D1E /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		C253D1F0230D97AD00EB2AE5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -63,6 +71,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C22EC3B8230EA6B500726551 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C22EC3B9230EA6DE00726551 /* Coordinator.swift */,
+				C22EC3BB230EA84500726551 /* Storyboarded.swift */,
+				C22EC3BD230EAD5B00726551 /* AuthCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 		C253D1EA230D96B900EB2AE5 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +112,7 @@
 			children = (
 				C2E7BBC5230D6DB400C8980A /* ViewController.swift */,
 				C24D15EC230D865F00E70D1E /* LoginController.swift */,
+				C22EC3BF230EB03300726551 /* RegisterController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -128,6 +147,7 @@
 		C2E7BBC2230D6DB400C8980A /* calorie-counter */ = {
 			isa = PBXGroup;
 			children = (
+				C22EC3B8230EA6B500726551 /* Coordinators */,
 				C253D1F2230D981C00EB2AE5 /* Helpers */,
 				C253D1ED230D974800EB2AE5 /* Controllers */,
 				C253D1EC230D972D00EB2AE5 /* Utilities */,
@@ -333,8 +353,12 @@
 				C22EC3B5230E75E300726551 /* StringExtensions.swift in Sources */,
 				C253D1F4230D987700EB2AE5 /* UIColorHex.swift in Sources */,
 				C2E7BBC4230D6DB400C8980A /* AppDelegate.swift in Sources */,
+				C22EC3BE230EAD5B00726551 /* AuthCoordinator.swift in Sources */,
 				C22EC3B7230E7A3B00726551 /* JMBlackButton.swift in Sources */,
+				C22EC3C0230EB03300726551 /* RegisterController.swift in Sources */,
+				C22EC3BC230EA84500726551 /* Storyboarded.swift in Sources */,
 				C253D1F1230D97AD00EB2AE5 /* Constants.swift in Sources */,
+				C22EC3BA230EA6DE00726551 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
