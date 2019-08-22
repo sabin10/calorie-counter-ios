@@ -9,11 +9,13 @@
 import UIKit
 import Firebase
 import FirebaseUI
+import FirebaseAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var coordinator: AuthCoordinator?
+    var mainCoordinator: MainCoordinator?
+    var authCoordinator: AuthCoordinator?
     var window: UIWindow?
 
 
@@ -22,8 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         let navController = UINavigationController()
-        coordinator = AuthCoordinator(navigationController: navController)
-        coordinator?.start()
+        
+        // choose what coordinator starts based on user loggin status
+        if Auth.auth().currentUser != nil {
+            mainCoordinator = MainCoordinator(navigationController: navController)
+            mainCoordinator?.start()
+        } else {
+            authCoordinator = AuthCoordinator(navigationController: navController)
+            authCoordinator?.start()
+        }
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = navController

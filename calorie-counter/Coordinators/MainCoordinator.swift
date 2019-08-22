@@ -1,5 +1,5 @@
 //
-//  AuthCoordinator.swift
+//  MainCoordinator.swift
 //  calorie-counter
 //
 //  Created by Sabin on 22/08/2019.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class AuthCoordinator: Coordinator {
+class MainCoordinator: Coordinator {
     var childCoordinators = [Coordinator]()
     var navigationController: UINavigationController
     
@@ -18,15 +18,8 @@ class AuthCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = LoginController.instantiate(storyboardName: "Auth")
+        let viewController = OverviewController.instantiate(storyboardName: "Main")
         viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: false)
     }
-    
-    func toRegister() {
-        let viewController = RegisterController.instantiate(storyboardName: "Auth")
-        viewController.coordinator = self
-        navigationController.pushViewController(viewController, animated: true)
-    }
-    
 }

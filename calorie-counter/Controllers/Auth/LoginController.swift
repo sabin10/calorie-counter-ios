@@ -9,10 +9,9 @@
 import UIKit
 import FirebaseAuth
 
-class LoginController: UIViewController, Storyboarded {
+class LoginController: UIViewControllerBase, Storyboarded {
     
     weak var coordinator: AuthCoordinator?
-    
     
     @IBOutlet weak var emailField: JMAuthTextField!
     @IBOutlet weak var passwordField: JMAuthTextField!
@@ -25,6 +24,7 @@ class LoginController: UIViewController, Storyboarded {
     
     
     // Actions
+    
     @IBAction func loginBtnPressed(_ sender: Any) {
         if let emailText = emailField.text,
             let passwordText = passwordField.text {
@@ -34,11 +34,11 @@ class LoginController: UIViewController, Storyboarded {
     }
     
     @objc func toRegisterLabelTapped(tapGestureRecognizer: UITapGestureRecognizer) {
-//        print("sabi sabin")
         coordinator?.toRegister()
     }
     
     // Firebase Sign In
+    
     private func signInFirebase(email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if let error = error {
@@ -46,36 +46,20 @@ class LoginController: UIViewController, Storyboarded {
                 self.signInError()
                 return
             }
-            
-            print("succes")
         }
     }
     
     private func signInError() {
-        let alert = UIAlertController(title: "Sign In Failed", message: "Bad Credentials", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
-            switch action.style{
-            case .default:
-                print("default")
-            
-            case .cancel:
-                print("cancel")
-            
-            case .destructive:
-                print("destructive")
-                    }
-                }
-            )
-        )
-        self.present(alert, animated: true, completion: nil)
+        super.showAlert(title: "Error Sign In", message: "Bad Credentials")
+        
     }
     
     // Init
+    
     private func initToRegisterLabelInteraction() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(toRegisterLabelTapped(tapGestureRecognizer:)))
         toRegisterLabel.isUserInteractionEnabled = true
         toRegisterLabel.addGestureRecognizer(tapGesture)
     }
     
-
 }
