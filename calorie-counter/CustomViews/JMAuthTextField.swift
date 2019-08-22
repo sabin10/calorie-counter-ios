@@ -11,7 +11,7 @@ import UIKit
 
 class JMAuthTextField: UITextField {
     
-    let padding = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 0)
+    let padding = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 0)
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -38,26 +38,14 @@ class JMAuthTextField: UITextField {
     private func setupField() {
         borderStyle = .roundedRect
         layer.cornerRadius = frame.size.height/2
-        layer.borderColor = Colors.blueMacro?.cgColor
-        layer.borderWidth = 0.5
+        layer.borderColor = Colors.grey.cgColor
+        layer.borderWidth = 1.0
         tintColor = Colors.black
-//        textColor = Colors.blueMacro
-//        font = UIFont(name: Fonts.avenirNextMedium, size: 16)
-        backgroundColor = UIColor.black.withAlphaComponent(0.2)
         autocorrectionType = .no
         clipsToBounds = true
         
-//        let placeholder       = self.placeholder != nil ? self.placeholder! : ""
-//        let placeholderFont   = UIFont(name: Fonts.avenirNextMedium, size: 16)!
-//        attributedPlaceholder = NSAttributedString(string: placeholder, attributes:
-//            [NSAttributedString.Key.font: placeholderFont])
-        
-        
-    
-        
-    
-        
-        
+        let placeholder       = self.placeholder != nil ? self.placeholder! : ""
+        attributedPlaceholder = NSAttributedString(string: placeholder, attributes:
+            [NSAttributedString.Key.foregroundColor: Colors.grey])
     }
-
 }
