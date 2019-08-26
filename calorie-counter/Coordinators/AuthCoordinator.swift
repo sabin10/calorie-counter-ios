@@ -29,4 +29,11 @@ class AuthCoordinator: Coordinator {
         navigationController.pushViewController(viewController, animated: true)
     }
     
+    func toMainCoordinator() {
+        let mainNavController = UINavigationController()
+        let mainCoordinator = MainCoordinator(navigationController: mainNavController)
+        childCoordinators.append(mainCoordinator)
+        mainCoordinator.start()
+    }
+    
 }

@@ -46,6 +46,11 @@ class LoginController: UIViewControllerBase, Storyboarded {
                 self.signInError()
                 return
             }
+            // Sign In SUCCES
+            // Move to Main Story
+            self.coordinator?.toMainCoordinator()
+            
+            
         }
     }
     
