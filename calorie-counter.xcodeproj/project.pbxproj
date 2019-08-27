@@ -21,6 +21,7 @@
 		C20A161C231577F80012EE25 /* AppCoordinator+AuthCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A161B231577F80012EE25 /* AppCoordinator+AuthCoordinatorDelegate.swift */; };
 		C20A161E23157B640012EE25 /* UIAlertController+Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A161D23157B630012EE25 /* UIAlertController+Static.swift */; };
 		C20A162023157FE60012EE25 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A161F23157FE60012EE25 /* SearchViewController.swift */; };
+		C20A1624231586250012EE25 /* AuthCoordinator+RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A1623231586250012EE25 /* AuthCoordinator+RegisterViewController.swift */; };
 		C22EC3B5230E75E300726551 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3B4230E75E300726551 /* StringExtensions.swift */; };
 		C22EC3B7230E7A3B00726551 /* JMBlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3B6230E7A3B00726551 /* JMBlackButton.swift */; };
 		C22EC3BA230EA6DE00726551 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3B9230EA6DE00726551 /* Coordinator.swift */; };
@@ -60,6 +61,7 @@
 		C20A161B231577F80012EE25 /* AppCoordinator+AuthCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppCoordinator+AuthCoordinatorDelegate.swift"; sourceTree = "<group>"; };
 		C20A161D23157B630012EE25 /* UIAlertController+Static.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Static.swift"; sourceTree = "<group>"; };
 		C20A161F23157FE60012EE25 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C20A1623231586250012EE25 /* AuthCoordinator+RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AuthCoordinator+RegisterViewController.swift"; sourceTree = "<group>"; };
 		C22EC3B4230E75E300726551 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		C22EC3B6230E7A3B00726551 /* JMBlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMBlackButton.swift; sourceTree = "<group>"; };
 		C22EC3B9230EA6DE00726551 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 			children = (
 				C20A16192315741A0012EE25 /* AuthCoordinator+LoginViewControllerDelegate.swift */,
 				C22EC3BD230EAD5B00726551 /* AuthCoordinator.swift */,
+				C20A1623231586250012EE25 /* AuthCoordinator+RegisterViewController.swift */,
 			);
 			path = AuthCoordinator;
 			sourceTree = "<group>";
@@ -501,6 +504,7 @@
 				C20A1615231570400012EE25 /* PromiseError.swift in Sources */,
 				C20A162023157FE60012EE25 /* SearchViewController.swift in Sources */,
 				C253D1F1230D97AD00EB2AE5 /* Constants.swift in Sources */,
+				C20A1624231586250012EE25 /* AuthCoordinator+RegisterViewController.swift in Sources */,
 				C20A160F23156D400012EE25 /* ServerError.swift in Sources */,
 				C22EC3C8230ECFC300726551 /* OverviewViewController.swift in Sources */,
 				C22EC3CA230ED05B00726551 /* MainCoordinator.swift in Sources */,

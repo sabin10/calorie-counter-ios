@@ -9,13 +9,18 @@
 import UIKit
 import FirebaseAuth
 
+protocol RegisterViewControllerDelegate {
+    func didSignUpSuccessfully(on viewController: RegisterViewController)
+}
+
 extension RegisterViewController: Storyboarded {
     static var storyboardName: String { return "Auth"}
 }
 
-class RegisterViewController: UIViewControllerBase {
+class RegisterViewController: UIViewController {
     
     weak var coordinator: AuthCoordinator?
+    weak var navigationDelegate: (RegisterViewControllerDelegate & ErrorAlert)?
 
     @IBOutlet weak var emailField: JMAuthTextField!
     @IBOutlet weak var passwordField: JMAuthTextField!
@@ -53,18 +58,22 @@ class RegisterViewController: UIViewControllerBase {
                 return
             }
         }
+        
+        // Sign Up Succes => go to main
+        navigationDelegate?.didSignUpSuccessfully(on: self)
+        
     }
     
     
     private func passwordError() {
-        super.showAlert(title: "Bad Password", message: "Passwords doesn't match")
+        navigationDelegate?.showNoTitleAlert(withMessage: "Passwords doesn't match", on: self)
     }
     
     private func emailError() {
-        super.showAlert(title: "Bad Email", message: "The email provided is not valid")
+        navigationDelegate?.showNoTitleAlert(withMessage: "Email is not valid", on: self)
     }
     
     private func registerError() {
-        super.showAlert(title: "Register Error", message: "Something went wrong")
+        navigationDelegate?.showNoTitleAlert(withMessage: "Something went wrong", on: self)
     }
 }

@@ -20,6 +20,7 @@ extension LoginViewController: Storyboarded {
 class LoginViewController: UIViewController {
 
     weak var navigationDelegate: (LoginViewControllerDelegate & ErrorAlert)?
+    weak var coordinator: AuthCoordinator?
     
     @IBOutlet weak var emailField: JMAuthTextField!
     @IBOutlet weak var passwordField: JMAuthTextField!
@@ -42,7 +43,8 @@ class LoginViewController: UIViewController {
     }
     
     @objc func toRegisterLabelTapped(tapGestureRecognizer: UITapGestureRecognizer) {
-//        coordinator?.toRegister()
+        coordinator?.toRegister()
+        
     }
     
     // Firebase Sign In
@@ -62,7 +64,8 @@ class LoginViewController: UIViewController {
     }
     
     private func signInError() {
-//        super.showAlert(title: "Error Sign In", message: "Bad Credentials")
+//        navigationDelegate?.showErrorAlert(withMessage: "Bad Credentials", on: self)
+        navigationDelegate?.showNoTitleAlert(withMessage: "Bad Credentials", on: self)
         
     }
     
