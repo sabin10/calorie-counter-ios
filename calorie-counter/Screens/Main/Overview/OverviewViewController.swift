@@ -9,9 +9,14 @@
 import UIKit
 import FirebaseAuth
 
-class OverviewController: UIViewControllerBase, Storyboarded {
+extension OverviewViewController: Storyboarded {
+    static var storyboardName: String { return "Main"}
+}
 
+class OverviewViewController: UIViewController {
+    
     weak var coordinator: MainCoordinator?
+
     
     override func viewDidLoad() {
       
@@ -25,5 +30,9 @@ class OverviewController: UIViewControllerBase, Storyboarded {
         } catch let err {
             print(err)
         }
+    }
+    
+    @IBAction func toSearch(_ sender: Any) {
+        coordinator?.toSearch()
     }
 }

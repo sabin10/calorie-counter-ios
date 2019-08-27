@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20A1603231569280012EE25 /* AppDelegate+Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A1602231569280012EE25 /* AppDelegate+Container.swift */; };
+		C20A1605231569880012EE25 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A1604231569880012EE25 /* AppCoordinator.swift */; };
+		C20A160723156BDA0012EE25 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A160623156BDA0012EE25 /* ContainerViewController.swift */; };
+		C20A160E23156D400012EE25 /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A160A23156D400012EE25 /* NetworkingError.swift */; };
+		C20A160F23156D400012EE25 /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A160B23156D400012EE25 /* ServerError.swift */; };
+		C20A161023156D400012EE25 /* ErrorPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A160C23156D400012EE25 /* ErrorPresenting.swift */; };
+		C20A161123156D400012EE25 /* ServerErrorPresenting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A160D23156D400012EE25 /* ServerErrorPresenting.swift */; };
+		C20A1615231570400012EE25 /* PromiseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A1613231570400012EE25 /* PromiseError.swift */; };
+		C20A1616231570400012EE25 /* UIView+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A1614231570400012EE25 /* UIView+Promise.swift */; };
+		C20A1618231573210012EE25 /* AppDelegate+PromiseKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A1617231573210012EE25 /* AppDelegate+PromiseKit.swift */; };
+		C20A161A2315741B0012EE25 /* AuthCoordinator+LoginViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A16192315741A0012EE25 /* AuthCoordinator+LoginViewControllerDelegate.swift */; };
+		C20A161C231577F80012EE25 /* AppCoordinator+AuthCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A161B231577F80012EE25 /* AppCoordinator+AuthCoordinatorDelegate.swift */; };
+		C20A161E23157B640012EE25 /* UIAlertController+Static.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A161D23157B630012EE25 /* UIAlertController+Static.swift */; };
+		C20A162023157FE60012EE25 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A161F23157FE60012EE25 /* SearchViewController.swift */; };
 		C22EC3B5230E75E300726551 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3B4230E75E300726551 /* StringExtensions.swift */; };
 		C22EC3B7230E7A3B00726551 /* JMBlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3B6230E7A3B00726551 /* JMBlackButton.swift */; };
 		C22EC3BA230EA6DE00726551 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3B9230EA6DE00726551 /* Coordinator.swift */; };
 		C22EC3BC230EA84500726551 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3BB230EA84500726551 /* Storyboarded.swift */; };
 		C22EC3BE230EAD5B00726551 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3BD230EAD5B00726551 /* AuthCoordinator.swift */; };
-		C22EC3C0230EB03300726551 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3BF230EB03300726551 /* RegisterController.swift */; };
+		C22EC3C0230EB03300726551 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3BF230EB03300726551 /* RegisterViewController.swift */; };
 		C22EC3C4230EBC5D00726551 /* UIViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3C3230EBC5D00726551 /* UIViewControllerBase.swift */; };
-		C22EC3C8230ECFC300726551 /* OverviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3C7230ECFC300726551 /* OverviewController.swift */; };
+		C22EC3C8230ECFC300726551 /* OverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3C7230ECFC300726551 /* OverviewViewController.swift */; };
 		C22EC3CA230ED05B00726551 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22EC3C9230ED05B00726551 /* MainCoordinator.swift */; };
-		C242F56A23103EE10019E883 /* ManagerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C242F56923103EE10019E883 /* ManagerCoordinator.swift */; };
 		C24D15EB230D852F00E70D1E /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24D15EA230D852F00E70D1E /* Auth.storyboard */; };
-		C24D15ED230D865F00E70D1E /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24D15EC230D865F00E70D1E /* LoginController.swift */; };
+		C24D15ED230D865F00E70D1E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24D15EC230D865F00E70D1E /* LoginViewController.swift */; };
 		C253D1F1230D97AD00EB2AE5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253D1F0230D97AD00EB2AE5 /* Constants.swift */; };
 		C253D1F4230D987700EB2AE5 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253D1F3230D987700EB2AE5 /* UIColorHex.swift */; };
 		C253D1F6230D9C3B00EB2AE5 /* JMAuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253D1F5230D9C3B00EB2AE5 /* JMAuthTextField.swift */; };
 		C2E7BBC4230D6DB400C8980A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E7BBC3230D6DB400C8980A /* AppDelegate.swift */; };
-		C2E7BBC6230D6DB400C8980A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E7BBC5230D6DB400C8980A /* ViewController.swift */; };
 		C2E7BBC9230D6DB400C8980A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E7BBC7230D6DB400C8980A /* Main.storyboard */; };
 		C2E7BBCB230D6DB500C8980A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E7BBCA230D6DB500C8980A /* Assets.xcassets */; };
 		C2E7BBD6230D71FD00C8980A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2E7BBD5230D71FD00C8980A /* GoogleService-Info.plist */; };
@@ -34,24 +46,36 @@
 		043B4BFD2C17B4397B471773 /* Pods-calorie-counter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calorie-counter.release.xcconfig"; path = "Target Support Files/Pods-calorie-counter/Pods-calorie-counter.release.xcconfig"; sourceTree = "<group>"; };
 		24E01D3EEF7D3B54DC95B3C3 /* Pods-calorie-counter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-calorie-counter.debug.xcconfig"; path = "Target Support Files/Pods-calorie-counter/Pods-calorie-counter.debug.xcconfig"; sourceTree = "<group>"; };
 		76F92EC054999730EC93A8B9 /* Pods_calorie_counter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_calorie_counter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C20A1602231569280012EE25 /* AppDelegate+Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+Container.swift"; sourceTree = "<group>"; };
+		C20A1604231569880012EE25 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		C20A160623156BDA0012EE25 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		C20A160A23156D400012EE25 /* NetworkingError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		C20A160B23156D400012EE25 /* ServerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		C20A160C23156D400012EE25 /* ErrorPresenting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorPresenting.swift; sourceTree = "<group>"; };
+		C20A160D23156D400012EE25 /* ServerErrorPresenting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerErrorPresenting.swift; sourceTree = "<group>"; };
+		C20A1613231570400012EE25 /* PromiseError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromiseError.swift; sourceTree = "<group>"; };
+		C20A1614231570400012EE25 /* UIView+Promise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Promise.swift"; sourceTree = "<group>"; };
+		C20A1617231573210012EE25 /* AppDelegate+PromiseKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+PromiseKit.swift"; sourceTree = "<group>"; };
+		C20A16192315741A0012EE25 /* AuthCoordinator+LoginViewControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AuthCoordinator+LoginViewControllerDelegate.swift"; sourceTree = "<group>"; };
+		C20A161B231577F80012EE25 /* AppCoordinator+AuthCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppCoordinator+AuthCoordinatorDelegate.swift"; sourceTree = "<group>"; };
+		C20A161D23157B630012EE25 /* UIAlertController+Static.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Static.swift"; sourceTree = "<group>"; };
+		C20A161F23157FE60012EE25 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		C22EC3B4230E75E300726551 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
 		C22EC3B6230E7A3B00726551 /* JMBlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMBlackButton.swift; sourceTree = "<group>"; };
 		C22EC3B9230EA6DE00726551 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		C22EC3BB230EA84500726551 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		C22EC3BD230EAD5B00726551 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
-		C22EC3BF230EB03300726551 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		C22EC3BF230EB03300726551 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		C22EC3C3230EBC5D00726551 /* UIViewControllerBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerBase.swift; sourceTree = "<group>"; };
-		C22EC3C7230ECFC300726551 /* OverviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewController.swift; sourceTree = "<group>"; };
+		C22EC3C7230ECFC300726551 /* OverviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewController.swift; sourceTree = "<group>"; };
 		C22EC3C9230ED05B00726551 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
-		C242F56923103EE10019E883 /* ManagerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerCoordinator.swift; sourceTree = "<group>"; };
 		C24D15EA230D852F00E70D1E /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
-		C24D15EC230D865F00E70D1E /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		C24D15EC230D865F00E70D1E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		C253D1F0230D97AD00EB2AE5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C253D1F3230D987700EB2AE5 /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 		C253D1F5230D9C3B00EB2AE5 /* JMAuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMAuthTextField.swift; sourceTree = "<group>"; };
 		C2E7BBC0230D6DB400C8980A /* calorie-counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "calorie-counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E7BBC3230D6DB400C8980A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C2E7BBC5230D6DB400C8980A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C2E7BBC8230D6DB400C8980A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C2E7BBCA230D6DB500C8980A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2E7BBCF230D6DB500C8980A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,42 +103,116 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		C22EC3B8230EA6B500726551 /* Coordinators */ = {
+		C20A15FB231559450012EE25 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				C22EC3B9230EA6DE00726551 /* Coordinator.swift */,
-				C22EC3BB230EA84500726551 /* Storyboarded.swift */,
-				C22EC3BD230EAD5B00726551 /* AuthCoordinator.swift */,
-				C22EC3C9230ED05B00726551 /* MainCoordinator.swift */,
-				C242F56923103EE10019E883 /* ManagerCoordinator.swift */,
+				C20A160623156BDA0012EE25 /* ContainerViewController.swift */,
+				C20A15FE2315597E0012EE25 /* Main */,
+				C20A15FC231559560012EE25 /* Auth */,
 			);
-			path = Coordinators;
+			path = Screens;
 			sourceTree = "<group>";
 		};
-		C22EC3C5230ECCB500726551 /* Auth */ = {
+		C20A15FC231559560012EE25 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				C22EC3BF230EB03300726551 /* RegisterController.swift */,
-				C24D15EC230D865F00E70D1E /* LoginController.swift */,
+				C24D15EC230D865F00E70D1E /* LoginViewController.swift */,
+				C22EC3BF230EB03300726551 /* RegisterViewController.swift */,
+				C24D15EA230D852F00E70D1E /* Auth.storyboard */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
 		};
-		C22EC3C6230ECEB700726551 /* Main */ = {
+		C20A15FE2315597E0012EE25 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				C22EC3C7230ECFC300726551 /* OverviewController.swift */,
+				C20A162223157FFB0012EE25 /* Search */,
+				C20A162123157FF20012EE25 /* Overview */,
+				C2E7BBC7230D6DB400C8980A /* Main.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		C253D1EA230D96B900EB2AE5 /* Storyboards */ = {
+		C20A15FF231568200012EE25 /* AppCoordinator */ = {
 			isa = PBXGroup;
 			children = (
-				C2E7BBC7230D6DB400C8980A /* Main.storyboard */,
-				C24D15EA230D852F00E70D1E /* Auth.storyboard */,
+				C20A1604231569880012EE25 /* AppCoordinator.swift */,
+				C20A161B231577F80012EE25 /* AppCoordinator+AuthCoordinatorDelegate.swift */,
 			);
-			path = Storyboards;
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		C20A16002315682D0012EE25 /* AuthCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C20A16192315741A0012EE25 /* AuthCoordinator+LoginViewControllerDelegate.swift */,
+				C22EC3BD230EAD5B00726551 /* AuthCoordinator.swift */,
+			);
+			path = AuthCoordinator;
+			sourceTree = "<group>";
+		};
+		C20A1601231568370012EE25 /* MainCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				C22EC3C9230ED05B00726551 /* MainCoordinator.swift */,
+			);
+			path = MainCoordinator;
+			sourceTree = "<group>";
+		};
+		C20A160823156D360012EE25 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C20A160923156D400012EE25 /* Errors */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C20A160923156D400012EE25 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				C20A160A23156D400012EE25 /* NetworkingError.swift */,
+				C20A160B23156D400012EE25 /* ServerError.swift */,
+				C20A160C23156D400012EE25 /* ErrorPresenting.swift */,
+				C20A160D23156D400012EE25 /* ServerErrorPresenting.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		C20A1612231570400012EE25 /* PromiseKit */ = {
+			isa = PBXGroup;
+			children = (
+				C20A1613231570400012EE25 /* PromiseError.swift */,
+				C20A1614231570400012EE25 /* UIView+Promise.swift */,
+			);
+			path = PromiseKit;
+			sourceTree = "<group>";
+		};
+		C20A162123157FF20012EE25 /* Overview */ = {
+			isa = PBXGroup;
+			children = (
+				C22EC3C7230ECFC300726551 /* OverviewViewController.swift */,
+			);
+			path = Overview;
+			sourceTree = "<group>";
+		};
+		C20A162223157FFB0012EE25 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				C20A161F23157FE60012EE25 /* SearchViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		C22EC3B8230EA6B500726551 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				C20A1601231568370012EE25 /* MainCoordinator */,
+				C20A16002315682D0012EE25 /* AuthCoordinator */,
+				C20A15FF231568200012EE25 /* AppCoordinator */,
+				C22EC3B9230EA6DE00726551 /* Coordinator.swift */,
+				C22EC3BB230EA84500726551 /* Storyboarded.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		C253D1EB230D971C00EB2AE5 /* CustomViews */ = {
@@ -134,24 +232,26 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		C253D1ED230D974800EB2AE5 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				C22EC3C6230ECEB700726551 /* Main */,
-				C22EC3C5230ECCB500726551 /* Auth */,
-				C2E7BBC5230D6DB400C8980A /* ViewController.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		C253D1F2230D981C00EB2AE5 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C20A161D23157B630012EE25 /* UIAlertController+Static.swift */,
+				C20A1612231570400012EE25 /* PromiseKit */,
 				C253D1F3230D987700EB2AE5 /* UIColorHex.swift */,
 				C22EC3B4230E75E300726551 /* StringExtensions.swift */,
 				C22EC3C3230EBC5D00726551 /* UIViewControllerBase.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C2BA08522315526E0038B566 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C20A1617231573210012EE25 /* AppDelegate+PromiseKit.swift */,
+				C2E7BBC3230D6DB400C8980A /* AppDelegate.swift */,
+				C20A1602231569280012EE25 /* AppDelegate+Container.swift */,
+			);
+			path = AppDelegate;
 			sourceTree = "<group>";
 		};
 		C2E7BBB7230D6DB400C8980A = {
@@ -175,14 +275,14 @@
 		C2E7BBC2230D6DB400C8980A /* calorie-counter */ = {
 			isa = PBXGroup;
 			children = (
+				C20A160823156D360012EE25 /* Networking */,
+				C20A15FB231559450012EE25 /* Screens */,
+				C2BA08522315526E0038B566 /* AppDelegate */,
 				C22EC3B8230EA6B500726551 /* Coordinators */,
 				C253D1F2230D981C00EB2AE5 /* Helpers */,
-				C253D1ED230D974800EB2AE5 /* Controllers */,
 				C253D1EC230D972D00EB2AE5 /* Utilities */,
 				C253D1EB230D971C00EB2AE5 /* CustomViews */,
-				C253D1EA230D96B900EB2AE5 /* Storyboards */,
 				C2E7BBD5230D71FD00C8980A /* GoogleService-Info.plist */,
-				C2E7BBC3230D6DB400C8980A /* AppDelegate.swift */,
 				C2E7BBCA230D6DB500C8980A /* Assets.xcassets */,
 				C2E7BBCF230D6DB500C8980A /* Info.plist */,
 			);
@@ -317,6 +417,7 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
@@ -334,6 +435,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
@@ -375,20 +477,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2E7BBC6230D6DB400C8980A /* ViewController.swift in Sources */,
-				C24D15ED230D865F00E70D1E /* LoginController.swift in Sources */,
-				C242F56A23103EE10019E883 /* ManagerCoordinator.swift in Sources */,
+				C20A1603231569280012EE25 /* AppDelegate+Container.swift in Sources */,
+				C20A161023156D400012EE25 /* ErrorPresenting.swift in Sources */,
+				C24D15ED230D865F00E70D1E /* LoginViewController.swift in Sources */,
+				C20A1616231570400012EE25 /* UIView+Promise.swift in Sources */,
 				C253D1F6230D9C3B00EB2AE5 /* JMAuthTextField.swift in Sources */,
+				C20A1618231573210012EE25 /* AppDelegate+PromiseKit.swift in Sources */,
+				C20A161123156D400012EE25 /* ServerErrorPresenting.swift in Sources */,
 				C22EC3B5230E75E300726551 /* StringExtensions.swift in Sources */,
+				C20A160E23156D400012EE25 /* NetworkingError.swift in Sources */,
+				C20A1605231569880012EE25 /* AppCoordinator.swift in Sources */,
 				C253D1F4230D987700EB2AE5 /* UIColorHex.swift in Sources */,
+				C20A161A2315741B0012EE25 /* AuthCoordinator+LoginViewControllerDelegate.swift in Sources */,
 				C2E7BBC4230D6DB400C8980A /* AppDelegate.swift in Sources */,
 				C22EC3C4230EBC5D00726551 /* UIViewControllerBase.swift in Sources */,
 				C22EC3BE230EAD5B00726551 /* AuthCoordinator.swift in Sources */,
 				C22EC3B7230E7A3B00726551 /* JMBlackButton.swift in Sources */,
-				C22EC3C0230EB03300726551 /* RegisterController.swift in Sources */,
+				C20A161C231577F80012EE25 /* AppCoordinator+AuthCoordinatorDelegate.swift in Sources */,
+				C22EC3C0230EB03300726551 /* RegisterViewController.swift in Sources */,
+				C20A161E23157B640012EE25 /* UIAlertController+Static.swift in Sources */,
+				C20A160723156BDA0012EE25 /* ContainerViewController.swift in Sources */,
 				C22EC3BC230EA84500726551 /* Storyboarded.swift in Sources */,
+				C20A1615231570400012EE25 /* PromiseError.swift in Sources */,
+				C20A162023157FE60012EE25 /* SearchViewController.swift in Sources */,
 				C253D1F1230D97AD00EB2AE5 /* Constants.swift in Sources */,
-				C22EC3C8230ECFC300726551 /* OverviewController.swift in Sources */,
+				C20A160F23156D400012EE25 /* ServerError.swift in Sources */,
+				C22EC3C8230ECFC300726551 /* OverviewViewController.swift in Sources */,
 				C22EC3CA230ED05B00726551 /* MainCoordinator.swift in Sources */,
 				C22EC3BA230EA6DE00726551 /* Coordinator.swift in Sources */,
 			);

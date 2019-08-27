@@ -14,8 +14,7 @@ import FirebaseAuth
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var mainCoordinator: MainCoordinator?
-    var authCoordinator: AuthCoordinator?
+    var coordinator: AppCoordinator!
     var window: UIWindow?
 
 
@@ -23,20 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
-        let navController = UINavigationController()
-        
-        // choose what coordinator starts based on user loggin status
-        if Auth.auth().currentUser != nil {
-            mainCoordinator = MainCoordinator(navigationController: navController)
-            mainCoordinator?.start()
-        } else {
-            authCoordinator = AuthCoordinator(navigationController: navController)
-            authCoordinator?.start()
-        }
-        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navController
-        window?.makeKeyAndVisible()
+        setupContainer()
+        coordinator.start()
         
         return true
     }

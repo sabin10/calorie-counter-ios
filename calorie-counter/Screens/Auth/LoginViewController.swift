@@ -9,9 +9,17 @@
 import UIKit
 import FirebaseAuth
 
-class LoginController: UIViewControllerBase, Storyboarded {
-    
-    weak var coordinator: AuthCoordinator?
+protocol LoginViewControllerDelegate {
+    func didLogInSuccessfully(on viewController: LoginViewController)
+}
+
+extension LoginViewController: Storyboarded {
+    static var storyboardName: String { return "Auth"}
+}
+
+class LoginViewController: UIViewController {
+
+    weak var navigationDelegate: (LoginViewControllerDelegate & ErrorAlert)?
     
     @IBOutlet weak var emailField: JMAuthTextField!
     @IBOutlet weak var passwordField: JMAuthTextField!
@@ -34,7 +42,7 @@ class LoginController: UIViewControllerBase, Storyboarded {
     }
     
     @objc func toRegisterLabelTapped(tapGestureRecognizer: UITapGestureRecognizer) {
-        coordinator?.toRegister()
+//        coordinator?.toRegister()
     }
     
     // Firebase Sign In
@@ -47,15 +55,14 @@ class LoginController: UIViewControllerBase, Storyboarded {
                 return
             }
             // Sign In SUCCES
-            // Move to Main Story
-            self.coordinator?.toMainCoordinator()
-            
+            // Move to Main Storyboard
+            self.navigationDelegate?.didLogInSuccessfully(on: self)
             
         }
     }
     
     private func signInError() {
-        super.showAlert(title: "Error Sign In", message: "Bad Credentials")
+//        super.showAlert(title: "Error Sign In", message: "Bad Credentials")
         
     }
     

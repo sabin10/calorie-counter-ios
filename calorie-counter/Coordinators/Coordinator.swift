@@ -6,12 +6,31 @@
 //  Copyright © 2019 Sabin. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-protocol Coordinator {
+typealias ErrorAlert = ErrorPresenting & ServerErrorPresenting
+
+protocol Coordinator: ErrorAlert {
     var childCoordinators: [Coordinator] { get set }
-    var navigationController: UINavigationController { get set }
+    var baseViewController: UIViewController { get }
+    
+    func kill(_ coordinator: Coordinator)
     
     func start()
+}
+
+extension Coordinator {
+    func kill(_ coordinator: Coordinator) {
+        childCoordinators = childCoordinators.filter { $0 !== coordinator }
+    }
+}
+
+extension Coordinator {
+    func showUnknownErrorAlert() {
+        showGenericErrorAlert(on: baseViewController)
+    }
+    func showAlert(error: ServerError) {
+        showAlert(error: error, on: baseViewController)
+    }
+    
 }

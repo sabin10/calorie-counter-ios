@@ -9,7 +9,11 @@
 import UIKit
 import FirebaseAuth
 
-class RegisterController: UIViewControllerBase, Storyboarded {
+extension RegisterViewController: Storyboarded {
+    static var storyboardName: String { return "Auth"}
+}
+
+class RegisterViewController: UIViewControllerBase {
     
     weak var coordinator: AuthCoordinator?
 
