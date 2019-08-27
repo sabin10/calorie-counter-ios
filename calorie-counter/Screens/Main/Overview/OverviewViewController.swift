@@ -19,11 +19,9 @@ class OverviewViewController: UIViewController {
 
     
     override func viewDidLoad() {
-      
     }
 
     @IBAction func signOutPressed(_ sender: Any) {
-        
         do {
             try Auth.auth().signOut()
             

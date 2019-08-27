@@ -1,5 +1,5 @@
 //
-//  SearchViewController.swift
+//  AddFoodViewController.swift
 //  calorie-counter
 //
 //  Created by Sabin on 27/08/2019.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-extension SearchViewController: Storyboarded {
+extension AddFoodViewController: Storyboarded {
     static var storyboardName: String { return "Main"}
 }
 
-class SearchViewController: UIViewController {
+class AddFoodViewController: UIViewController {
     
     weak var coordinator: MainCoordinator?
 
@@ -20,9 +20,6 @@ class SearchViewController: UIViewController {
         super.viewDidLoad()
     }
     
-    @IBAction func toAddFood(_ sender: Any) {
-        coordinator?.toAddFood()
-    }
-    
+
 
 }

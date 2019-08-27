@@ -27,6 +27,13 @@ class MainCoordinator: Coordinator {
     func toSearch() {
         let searchVC = SearchViewController.instantiate()
         navigationController.pushViewController(searchVC, animated: true)
+        searchVC.coordinator = self
+    }
+    
+    func toAddFood() {
+        let addFoodVC = AddFoodViewController.instantiate()
+        navigationController.pushViewController(addFoodVC, animated: true)
+        addFoodVC.coordinator = self
     }
     
 }

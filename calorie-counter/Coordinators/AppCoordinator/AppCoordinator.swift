@@ -22,7 +22,6 @@ class AppCoordinator: Coordinator {
 
     func start() {
         // logic auth/main
-        
         let currentUser = Auth.auth().currentUser
         let isUserLoggedIn = currentUser != nil
         
@@ -41,13 +40,6 @@ class AppCoordinator: Coordinator {
             self.container.show(authCoordinator.baseViewController, coordinator: authCoordinator)
         }
     }
-    
-//    @discardableResult func showLoadingScreen() -> LoadingViewController {
-//        let loadingViewController = LoadingViewController.instantiate()
-//        loadingViewController.navigationDelegate = self
-//        container.show(loadingViewController, coordinator: nil)
-//        return loadingViewController
-//    }
     
 }
 
