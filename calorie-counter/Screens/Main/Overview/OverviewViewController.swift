@@ -22,6 +22,7 @@ class OverviewViewController: UIViewController {
         super.viewDidLoad()
         // set navigation bar title
         self.title = "Overview"
+        
     }
 
     @IBAction func signOutPressed(_ sender: Any) {
