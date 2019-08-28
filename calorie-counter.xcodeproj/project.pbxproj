@@ -37,6 +37,8 @@
 		C253D1F1230D97AD00EB2AE5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253D1F0230D97AD00EB2AE5 /* Constants.swift */; };
 		C253D1F4230D987700EB2AE5 /* UIColorHex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253D1F3230D987700EB2AE5 /* UIColorHex.swift */; };
 		C253D1F6230D9C3B00EB2AE5 /* JMAuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253D1F5230D9C3B00EB2AE5 /* JMAuthTextField.swift */; };
+		C268DE912316BE0D003553AC /* OverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C268DE902316BE0D003553AC /* OverviewViewModel.swift */; };
+		C268DE932316C11B003553AC /* JMSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C268DE922316C11B003553AC /* JMSearchTextField.swift */; };
 		C2E7BBC4230D6DB400C8980A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E7BBC3230D6DB400C8980A /* AppDelegate.swift */; };
 		C2E7BBC9230D6DB400C8980A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E7BBC7230D6DB400C8980A /* Main.storyboard */; };
 		C2E7BBCB230D6DB500C8980A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E7BBCA230D6DB500C8980A /* Assets.xcassets */; };
@@ -78,6 +80,8 @@
 		C253D1F0230D97AD00EB2AE5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C253D1F3230D987700EB2AE5 /* UIColorHex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorHex.swift; sourceTree = "<group>"; };
 		C253D1F5230D9C3B00EB2AE5 /* JMAuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMAuthTextField.swift; sourceTree = "<group>"; };
+		C268DE902316BE0D003553AC /* OverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewModel.swift; sourceTree = "<group>"; };
+		C268DE922316C11B003553AC /* JMSearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSearchTextField.swift; sourceTree = "<group>"; };
 		C2E7BBC0230D6DB400C8980A /* calorie-counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "calorie-counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E7BBC3230D6DB400C8980A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E7BBC8230D6DB400C8980A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				C22EC3C7230ECFC300726551 /* OverviewViewController.swift */,
+				C268DE902316BE0D003553AC /* OverviewViewModel.swift */,
 			);
 			path = Overview;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 			children = (
 				C253D1F5230D9C3B00EB2AE5 /* JMAuthTextField.swift */,
 				C22EC3B6230E7A3B00726551 /* JMBlackButton.swift */,
+				C268DE922316C11B003553AC /* JMSearchTextField.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -499,7 +505,9 @@
 				C20A1616231570400012EE25 /* UIView+Promise.swift in Sources */,
 				C253D1F6230D9C3B00EB2AE5 /* JMAuthTextField.swift in Sources */,
 				C20A1618231573210012EE25 /* AppDelegate+PromiseKit.swift in Sources */,
+				C268DE912316BE0D003553AC /* OverviewViewModel.swift in Sources */,
 				C20A161123156D400012EE25 /* ServerErrorPresenting.swift in Sources */,
+				C268DE932316C11B003553AC /* JMSearchTextField.swift in Sources */,
 				C22EC3B5230E75E300726551 /* StringExtensions.swift in Sources */,
 				C20A160E23156D400012EE25 /* NetworkingError.swift in Sources */,
 				C20A1605231569880012EE25 /* AppCoordinator.swift in Sources */,

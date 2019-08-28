@@ -58,13 +58,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8i9-KB-Iwi">
-                                <rect key="frame" x="166" y="396" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="unA-ai-8ah">
                                 <rect key="frame" x="164" y="478" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -73,8 +66,27 @@
                                     <action selector="toAddFood:" destination="QMK-5m-NkO" eventType="touchUpInside" id="HY2-CI-Liq"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCU-6E-Nks">
+                                <rect key="frame" x="20" y="144" width="335" height="50"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oGu-R7-yJ8" userLabel="Search TextField" customClass="JMSearchTextField" customModule="calorie_counter" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="f7w-7s-QHn"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="tS0-Hk-js9" firstAttribute="trailing" secondItem="aCU-6E-Nks" secondAttribute="trailing" constant="20" id="BWW-Pn-pRd"/>
+                            <constraint firstItem="aCU-6E-Nks" firstAttribute="leading" secondItem="tS0-Hk-js9" secondAttribute="leading" constant="20" id="I1m-an-sBL"/>
+                            <constraint firstItem="aCU-6E-Nks" firstAttribute="top" secondItem="tS0-Hk-js9" secondAttribute="top" constant="100" id="cka-uf-x9U"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="tS0-Hk-js9"/>
                     </view>
                 </viewController>
