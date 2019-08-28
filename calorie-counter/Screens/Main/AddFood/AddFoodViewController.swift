@@ -18,6 +18,8 @@ class AddFoodViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // set navigation bar title
+        self.title = "Add Food"
     }
     
 

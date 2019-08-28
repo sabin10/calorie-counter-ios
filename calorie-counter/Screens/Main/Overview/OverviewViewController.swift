@@ -19,6 +19,9 @@ class OverviewViewController: UIViewController {
 
     
     override func viewDidLoad() {
+        super.viewDidLoad()
+        // set navigation bar title
+        self.title = "Overview"
     }
 
     @IBAction func signOutPressed(_ sender: Any) {

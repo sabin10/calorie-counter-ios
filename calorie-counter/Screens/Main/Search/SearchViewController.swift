@@ -18,6 +18,8 @@ class SearchViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        // set navigation bar title
+        self.title = "Search for Food"
     }
     
     @IBAction func toAddFood(_ sender: Any) {

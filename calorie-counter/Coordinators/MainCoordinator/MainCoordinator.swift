@@ -33,6 +33,7 @@ class MainCoordinator: Coordinator {
     func toAddFood() {
         let addFoodVC = AddFoodViewController.instantiate()
         navigationController.pushViewController(addFoodVC, animated: true)
+        
         addFoodVC.coordinator = self
     }
     
