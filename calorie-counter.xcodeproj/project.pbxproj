@@ -39,6 +39,7 @@
 		C253D1F6230D9C3B00EB2AE5 /* JMAuthTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C253D1F5230D9C3B00EB2AE5 /* JMAuthTextField.swift */; };
 		C268DE912316BE0D003553AC /* OverviewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C268DE902316BE0D003553AC /* OverviewViewModel.swift */; };
 		C268DE932316C11B003553AC /* JMSearchTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C268DE922316C11B003553AC /* JMSearchTextField.swift */; };
+		C268DE952316CD4C003553AC /* JMSearchBlackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C268DE942316CD4C003553AC /* JMSearchBlackButton.swift */; };
 		C2E7BBC4230D6DB400C8980A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E7BBC3230D6DB400C8980A /* AppDelegate.swift */; };
 		C2E7BBC9230D6DB400C8980A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2E7BBC7230D6DB400C8980A /* Main.storyboard */; };
 		C2E7BBCB230D6DB500C8980A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E7BBCA230D6DB500C8980A /* Assets.xcassets */; };
@@ -82,6 +83,7 @@
 		C253D1F5230D9C3B00EB2AE5 /* JMAuthTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMAuthTextField.swift; sourceTree = "<group>"; };
 		C268DE902316BE0D003553AC /* OverviewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverviewViewModel.swift; sourceTree = "<group>"; };
 		C268DE922316C11B003553AC /* JMSearchTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSearchTextField.swift; sourceTree = "<group>"; };
+		C268DE942316CD4C003553AC /* JMSearchBlackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JMSearchBlackButton.swift; sourceTree = "<group>"; };
 		C2E7BBC0230D6DB400C8980A /* calorie-counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "calorie-counter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E7BBC3230D6DB400C8980A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2E7BBC8230D6DB400C8980A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				C253D1F5230D9C3B00EB2AE5 /* JMAuthTextField.swift */,
 				C22EC3B6230E7A3B00726551 /* JMBlackButton.swift */,
 				C268DE922316C11B003553AC /* JMSearchTextField.swift */,
+				C268DE942316CD4C003553AC /* JMSearchBlackButton.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -529,6 +532,7 @@
 				C20A1624231586250012EE25 /* AuthCoordinator+RegisterViewControllerDelegate.swift in Sources */,
 				C20A160F23156D400012EE25 /* ServerError.swift in Sources */,
 				C22EC3C8230ECFC300726551 /* OverviewViewController.swift in Sources */,
+				C268DE952316CD4C003553AC /* JMSearchBlackButton.swift in Sources */,
 				C22EC3CA230ED05B00726551 /* MainCoordinator.swift in Sources */,
 				C22EC3BA230EA6DE00726551 /* Coordinator.swift in Sources */,
 			);

@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -66,11 +67,11 @@
                                     <action selector="toAddFood:" destination="QMK-5m-NkO" eventType="touchUpInside" id="HY2-CI-Liq"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCU-6E-Nks">
-                                <rect key="frame" x="20" y="144" width="335" height="50"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="aCU-6E-Nks">
+                                <rect key="frame" x="20" y="54" width="335" height="50"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oGu-R7-yJ8" userLabel="Search TextField" customClass="JMSearchTextField" customModule="calorie_counter" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="50"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="227" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="f7w-7s-QHn"/>
                                         </constraints>
@@ -78,6 +79,16 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcR-sd-h2s" customClass="JMSearchBlackButton" customModule="calorie_counter" customModuleProvider="target">
+                                        <rect key="frame" x="235" y="0.0" width="100" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="keD-la-vNI"/>
+                                        </constraints>
+                                        <state key="normal" title="Search"/>
+                                        <connections>
+                                            <action selector="searchBtnPressed:" destination="QMK-5m-NkO" eventType="touchUpInside" id="Oxi-qG-NMB"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -85,10 +96,13 @@
                         <constraints>
                             <constraint firstItem="tS0-Hk-js9" firstAttribute="trailing" secondItem="aCU-6E-Nks" secondAttribute="trailing" constant="20" id="BWW-Pn-pRd"/>
                             <constraint firstItem="aCU-6E-Nks" firstAttribute="leading" secondItem="tS0-Hk-js9" secondAttribute="leading" constant="20" id="I1m-an-sBL"/>
-                            <constraint firstItem="aCU-6E-Nks" firstAttribute="top" secondItem="tS0-Hk-js9" secondAttribute="top" constant="100" id="cka-uf-x9U"/>
+                            <constraint firstItem="aCU-6E-Nks" firstAttribute="top" secondItem="tS0-Hk-js9" secondAttribute="top" constant="10" id="W7T-G0-ony"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tS0-Hk-js9"/>
                     </view>
+                    <connections>
+                        <outlet property="searchTextField" destination="oGu-R7-yJ8" id="RKC-Mg-uIl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hu9-gE-SCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

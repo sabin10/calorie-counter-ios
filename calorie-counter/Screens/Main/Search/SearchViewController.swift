@@ -16,6 +16,8 @@ class SearchViewController: UIViewController {
     
     weak var coordinator: MainCoordinator?
 
+    @IBOutlet weak var searchTextField: JMSearchTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // set navigation bar title
@@ -26,5 +28,9 @@ class SearchViewController: UIViewController {
         coordinator?.toAddFood()
     }
     
-
+    
+    @IBAction func searchBtnPressed(_ sender: Any) {
+        // Call viewModel method and pass searchTextField.text
+    }
+    
 }
